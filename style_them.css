@@ -1,0 +1,109 @@
+/* Căn chỉnh toàn bộ container */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    margin: 0;
+    padding: 0;
+}
+
+/* Định dạng container chính */
+.container {
+    width: 100%;
+    max-width: 500px; /* Giảm độ rộng tối đa của container */
+    margin: 50px auto;
+    padding: 20px; /* Giảm padding để form ngắn gọn hơn */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề của form */
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 22px; /* Giảm kích thước font tiêu đề */
+    margin-bottom: 15px; /* Giảm khoảng cách dưới tiêu đề */
+}
+
+/* Định dạng các phần tử form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Giảm khoảng cách giữa các phần tử trong form */
+}
+
+/* Định dạng các label */
+label {
+    font-size: 14px; /* Giảm kích thước font của label */
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 3px; /* Giảm khoảng cách dưới label */
+}
+
+/* Các input text, date, và select */
+input[type="text"], input[type="date"], select, input[type="number"] {
+    padding: 8px; /* Giảm padding của các input */
+    font-size: 14px; /* Giảm kích thước font của input */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+/* Hiệu ứng khi focus vào input */
+input[type="text"]:focus, input[type="date"]:focus, select:focus, input[type="number"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Định dạng cho phần chọn giới tính */
+.gender-options {
+    display: flex;
+    gap: 10px; /* Giảm khoảng cách giữa các radio button */
+}
+
+/* Định dạng cho radio button */
+.gender-options input[type="radio"] {
+    margin-right: 5px; /* Giảm khoảng cách giữa radio buttons */
+}
+
+/* Cải tiến nút Lưu */
+button[type="submit"] {
+    padding: 12px 28px; /* Giảm padding của nút */
+    font-size: 16px; /* Giảm kích thước font của nút */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hiệu ứng hover cho nút */
+button[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Hiệu ứng focus cho nút */
+button[type="submit"]:focus {
+    outline: none;
+}
+
+/* Định dạng cho các phần tử nhập liệu */
+input[type="text"], input[type="number"], input[type="date"], select {
+    background-color: #fafafa;
+}
+
+input[type="text"]:hover, input[type="number"]:hover, input[type="date"]:hover, select:hover {
+    background-color: #f0f0f0;
+}
+
+/* Điều chỉnh khoảng cách giữa các trường nhập liệu */
+form div {
+    margin-bottom: 6px; /* Giảm khoảng cách giữa các trường nhập liệu */
+}

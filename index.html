@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách sinh viên</title>
+    <link rel="stylesheet" href="style_bang.css">
+
+
+</head>
+<body>
+    <div class="container">
+        <h1>Danh sách sinh viên</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Họ và tên</th>
+                    <th>Giới tính</th>
+                    <th>Tuổi</th>
+                    <th>Trình độ học vấn</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dữ liệu được PHP đổ vào đây -->
+                            <a href='sua.php?id=" . $row["id"] . "' class='edit-btn'>Sửa</a>
+                            <a href='xoa.php?id=" . $row["id"] . "' class='delete-btn'>Xóa</a>
+                } else {
+                    echo "<tr><td colspan='8'>Không có sinh viên nào.</td></tr>";
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

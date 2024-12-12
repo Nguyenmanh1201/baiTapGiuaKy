@@ -1,0 +1,104 @@
+/* Đặt lề cho toàn bộ trang */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Thiết kế container của form */
+.container {
+    width: 80%;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Tiêu đề form */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Style cho form */
+.sua-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Nhóm label và input */
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Các input và select */
+input[type="text"],
+input[type="date"],
+input[type="id"],
+select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="id"]:focus,
+select:focus {
+    border-color: #007BFF;
+}
+
+/* Radio buttons */
+input[type="radio"] {
+    margin: 0 10px 0 0;
+}
+
+/* Style cho nút submit */
+input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Giới hạn chiều rộng của form và căn giữa */
+.sua-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Thiết kế cho các thẻ thông báo lỗi */
+.error-message {
+    color: red;
+    font-size: 14px;
+}
+
+/* Style cho các button và form khi thay đổi */
+input[type="submit"]:active {
+    background-color: #1e7e34;
+}
+
+/* Đảm bảo các thành phần trên form không bị nhồi nhét vào nhau */
+form div {
+    margin-bottom: 20px;
+}
